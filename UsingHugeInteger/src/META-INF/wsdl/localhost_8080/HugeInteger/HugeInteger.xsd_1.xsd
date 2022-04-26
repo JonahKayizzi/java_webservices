@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://ch28.jhtp7.deitel.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ch28.jhtp7.deitel.com/">
+
+<xs:element name="add" type="tns:add"/>
+
+<xs:element name="addResponse" type="tns:addResponse"/>
+
+<xs:element name="bigger" type="tns:bigger"/>
+
+<xs:element name="biggerResponse" type="tns:biggerResponse"/>
+
+<xs:element name="equals" type="tns:equals"/>
+
+<xs:element name="equalsResponse" type="tns:equalsResponse"/>
+
+<xs:element name="hello" type="tns:hello"/>
+
+<xs:element name="helloResponse" type="tns:helloResponse"/>
+
+<xs:element name="smaller" type="tns:smaller"/>
+
+<xs:element name="smallerResponse" type="tns:smallerResponse"/>
+
+<xs:element name="subtract" type="tns:subtract"/>
+
+<xs:element name="subtractResponse" type="tns:subtractResponse"/>
+
+<xs:element name="toString" type="tns:toString"/>
+
+<xs:element name="toStringResponse" type="tns:toStringResponse"/>
+
+<xs:complexType name="toString">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="toStringResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="add">
+<xs:sequence>
+<xs:element name="first" type="xs:string" minOccurs="0"/>
+<xs:element name="second" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="smaller">
+<xs:sequence>
+<xs:element name="first" type="xs:string" minOccurs="0"/>
+<xs:element name="second" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="smallerResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="bigger">
+<xs:sequence>
+<xs:element name="first" type="xs:string" minOccurs="0"/>
+<xs:element name="second" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="biggerResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="equals">
+<xs:sequence>
+<xs:element name="first" type="xs:string" minOccurs="0"/>
+<xs:element name="second" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="equalsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="subtract">
+<xs:sequence>
+<xs:element name="first" type="xs:string" minOccurs="0"/>
+<xs:element name="second" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="subtractResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
